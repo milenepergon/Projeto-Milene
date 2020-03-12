@@ -9,7 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import static java.lang.Thread.sleep;
-
 import java.util.concurrent.TimeUnit;
 
 public class CadastraCliente {
@@ -18,7 +17,6 @@ public class CadastraCliente {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\Milene\\Drivers\\chromedriver.exe");
         WebDriver navegador = new ChromeDriver();
         navegador.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        navegador.manage().window().maximize();
 
         //abrir o navegador
         navegador.get ("https://www.grocerycrud.com/demo/bootstrap_theme");
